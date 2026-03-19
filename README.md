@@ -210,7 +210,7 @@ We ensure absolute fairness to honest users while maintaining strict security:
 
 ## 📊 Deliverables (Phase 1 Scope)
 
-We will deliver the foundational elements required for the Hackathon:
+We deliver the foundational elements required for the Hackathon:
 - [x] 📄 Detailed Idea Document (This README)
 - [x] 🧠 System design & workflow
 - [x] 💰 Premium logic & Pricing Model
