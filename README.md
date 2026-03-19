@@ -1,4 +1,4 @@
-# 🚀 ParametriX-AI : AI-Powered Parametric Insurance for India’s Gig Workers  
+# ParametriX-AI : An AI-Powered Parametric Insurance for India’s Gig Workers  
 **Guidewire DEVTrails 2026 – Phase 1 Submission**
 
 ---
@@ -56,17 +56,27 @@ We propose an **AI-Powered Parametric Insurance Platform** built for the modern 
 
 ```mermaid
 flowchart TD
-    A[User Registration] --> B[Risk Profiling AI]
-    B --> C[Dynamic Weekly Premium]
-    C --> D[Policy Purchase]
-    D --> E[Real-Time Monitoring]
-    E --> F[Trigger Detected]
-    F --> G[Fraud Detection Engine]
-    G --> H{Risk Score}
-    H -->|Low| I[Auto Approval]
-    H -->|Medium| J[Soft Verification]
-    H -->|High| K[Manual Review]
-    I --> L[Instant Payout]
+    %% Node Definitions
+    A[User Registration]
+    B[Risk Profiling AI]
+    C[Dynamic Weekly Premium]
+    D[Policy Purchase]
+    E[Real-Time Monitoring]
+    F[Trigger Detected]
+    G[Fraud Detection Engine]
+    H{Risk Score}
+    I[Auto Approval]
+    J[Soft Verification]
+    K[Manual Review]
+    L[Instant Payout]
+
+    %% Edge Connections
+    A --> B --> C --> D --> E --> F --> G --> H
+    H -- Low --> I
+    H -- Medium --> J
+    H -- High --> K
+    
+    I --> L
     J --> L
     K --> L
 ```
